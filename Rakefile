@@ -5,13 +5,13 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "nestor_growl"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Growl extension for Nestor}
+    gem.description = %Q{Growl as the state of the Nestor machine changes}
     gem.email = "francois@teksol.info"
     gem.homepage = "http://github.com/francois/nestor_growl"
     gem.authors = ["François Beausoleil"]
-    gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+
+    gem.add_dependency "nestor", "~> 0.2.0"
   end
 rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
