@@ -13,6 +13,8 @@ begin
 
     gem.add_dependency "nestor", "~> 0.2.0"
   end
+
+  Jeweler::GemcutterTasks.new
 rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
 end
